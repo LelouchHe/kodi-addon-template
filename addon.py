@@ -1,11 +1,13 @@
-import xbmcaddon
+import sys
 import xbmcgui
- 
-addon       = xbmcaddon.Addon()
-addonname   = addon.getAddonInfo('name')
+import xbmcplugin
 
-# Set a string variable to use 
-line1 = "Hello World!\nWe can write anything we want here using Python"
+addon_handle = int(sys.argv[1])
 
-# Launch a dialog box in kodi showing the string variable 'line1' as the contents
-xbmcgui.Dialog().ok(addonname, line1)
+xbmcplugin.setContent(addon_handle, 'movies')
+
+url = 'http://localhost/some_video.mkv'
+li = xbmcgui.ListItem('My First Video!', iconImage='DefaultVideo.png')
+xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
+
+xbmcplugin.endOfDirectory(addon_handle)
