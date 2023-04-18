@@ -4,9 +4,10 @@ A template for Kodi addon
 
 ## Develop
 
-1. Rename the "plugin.video.addon-template" to your addon
-2. Update `addon.xml`
-3. Update `addon.py` and related resources
+1. Run `pip install kodistubs`
+2. Rename the "plugin.video.addon-template" to your addon
+3. Update `addon.xml`
+4. Update `addon.py` and related resources
 
 ## Run
 
