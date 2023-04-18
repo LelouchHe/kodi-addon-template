@@ -2,11 +2,18 @@
 
 A template for Kodi addon
 
+## Develop
+
+1. Rename the "plugin.video.addon-template" to your addon
+2. Update `addon.xml`
+3. Update `addon.py` and related resources
+
 ## Run
 
-1. Enter addon browser
-2. Choose instal from zip
-3. Select the zip
+1. Zip the "plugin.video.addon-template" 
+2. Enter addon browser
+3. Choose instal from zip
+4. Select the generated zip from 1
 
 ## Fail to install
 
